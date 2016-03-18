@@ -1,0 +1,155 @@
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0px;
+	background-color: rgb(222,222,222);
+	font: 17px "微软雅黑";
+	
+}
+.container {
+	min-height: 100%;
+	min-width: 800px;
+	height: auto !important;
+	height: 100%;/*ie6不识别min-height,如上述处理*/
+	position: relative;
+	padding-bottom: 70px;
+}
+
+header{
+	/*width: 100%;*/
+	background-color: #333333;
+	height: 70px;
+}
+.nav{
+	float: right;
+	margin-right: 20px;
+	margin-top: 23px;
+}
+header li{
+	/*这里的圆点不知道为什么也没显示出来*/
+	list-style-type: disc;
+	display: inline;
+}
+header li a{
+	color: white;
+	text-decoration: none;
+}
+header li a:hover{
+	color: #999;
+	text-decoration: none;
+}
+
+article,aside{
+	
+	padding: 40px 20px;
+	background-color: white;
+	border-color: rgb(200,200,200);
+	border-style: ridge;
+	border-width: 1px 5px 5px 1px;
+}
+article{
+	margin: 23px 440px 0 23px;
+}
+aside{
+	position: absolute;
+	top: 93px;
+	right: 20px;
+	width: 400px;
+}
+h2{
+	font-weight: bold;
+	font-size: 150%;
+	/*不知道为什么这里的加粗好像没效果呀*/
+}
+h3{
+	color: grey;
+	font-size: 100%;
+}
+h4{
+	color: grey;
+	font-size: 50%;
+}
+article ul li{
+	list-style-type: none;
+}
+dd{
+	float: left;
+	width:130px;
+	margin: 10px;
+	text-align: center;
+	border: 1px solid grey;
+	text-align: center; 
+}
+
+table{
+	border: 1px;
+	border-color: grey;
+	/*这个颜色设置也被划掉了。。不知道为啥*/
+	width: 100%;
+}
+table th{
+	background-color: rgb(51,51,51);
+	color: white;
+}
+.lastTr{
+	background-color: grey;
+}
+
+aside h2{
+	padding-left: 20px;
+	border-left: 3px solid grey;
+}
+
+aside label{
+	width:40%; 
+	float:left;
+	text-align:right;
+}
+aside .note{
+	margin-left: 40%;
+	color: grey;
+}
+aside textarea{
+	width: 200px;
+	height: 100px;
+}
+aside input[type="submit"]{
+	width: 100%;
+	height: 40px;
+	font-size: 150%;
+	background-color: rgb(51,85,208);
+	color: white;
+	border-radius: 8px;
+}
+
+footer{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 50px;
+	background-color: black;
+	text-align: center;
+	/*padding-top: 20px;*/
+	clear: both;
+}
+
+footer p{
+	color: white;
+}
+
+.clearfix:after, .clearfix:before {
+	content: "";
+	display: table
+}
+.clearfix:after {
+	clear: both;
+	overflow: hidden
+}
+.clearfix {
+	zoom: 1;
+}
