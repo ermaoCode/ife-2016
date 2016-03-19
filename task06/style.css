@@ -1,0 +1,338 @@
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	font: 17px "微软雅黑";
+	margin: 0;
+	background-color: rgb(93,93,93);
+}
+
+.container{
+	width: 980px;
+	height: 1386px;
+	margin: 0 auto;
+	position: relative;
+	background-color: white;
+}
+
+header, .content, footer{
+	width: 892px;
+	
+}
+
+header{
+	height: 61px;
+	margin: 0 auto;
+	border-bottom: 2px solid #938e8c;
+	position: relative;
+}
+header .logo{
+	float: left;
+	height: 100%;
+	width: 110px;
+	background-color: rgb(213,93,92);
+	text-align: left;
+}
+header .logo p{
+	font-size: 12px;
+	color: white;
+	font-family: "黑体";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin: 0;
+}
+header .data{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin: 0;
+	font-family: "黑体";
+	font-size: 12px;
+	color: #d45d5c;
+}
+/*================================中间====================*/
+
+.content{
+	margin: 0 auto;
+	height: 1255px;
+}
+.top, .middle, .bottom{
+	width: 100%;
+}
+/*中间的上边*/
+.top{
+	height: 301px;
+	overflow: hidden;
+	padding-top: 35px;
+}
+.lt{
+	float: left;
+}
+.rt{
+	float: right;
+	height: 100%;
+	width: 203px;
+	border-top: 2px solid #cc8091;
+}
+.rt p{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.rt p:nth-child(1), .rt p:nth-child(2){
+	font-size: 24px;
+	color: black;
+	
+	font-variant: small-caps;
+	/*全部大写并且首字母变大*/
+	line-height: 1.25;
+}
+/*这里我不明白那个段落间距40是什么意思呀？margin？那也太宽了吧！*/
+/*.rt p:nth-child(1):first-letter, .rt p:nth-child(2):first-letter{
+	font-size: 125%;
+}*/
+/*真是醉了。。。怎么下划线也变粗了。。。*/
+.rt p:nth-child(3){
+	font-size: 12px;
+	font-family: "楷体";
+	line-height: 1;
+	color: #676767;             
+}
+.rt p:nth-child(4){
+	font-size: 116px;
+	color: #75b86b;
+	font-style: oblique;
+    text-indent: -17px;
+    line-height: 1;
+}
+.rt p:nth-child(5){
+	float: left;
+	font-size: 55px;
+	color: #cc8091;
+}
+/*只需要让这个 3.2 为浮动，然后右侧的文字就会自动变成环绕模式了哈哈哈哈*/
+.rtr{
+	
+	/*position: absolute;
+	bottom: 0;*/
+	/*margin-bottom: 0;*/
+	position: relative;
+	top: 25px;
+}
+.rtr p:nth-child(1){
+	font-size: 21px;
+	line-height: 1;
+	color: #cc8091;
+}
+.rtr p:nth-child(2){
+	font-size: 12px;
+	line-height: 1;
+	color: #aaa;
+}
+/*中间的中间*/
+.middle{
+	margin-top: 40px;
+	/*background-color: grey;*/
+	overflow: hidden;
+}
+.ml, .mm, .mr{
+	float: left;
+	margin-right: 20px;
+	width: 250px;
+}
+.mtitle{
+	text-decoration: underline;
+	font-size: 16px;
+	font-weight: bold;
+}
+.ml .mtitle{
+	color: #418c59;
+}
+.mm .mtitle{
+	color: #d2994f;
+}
+.mr .mtitle{
+	color: #cc7680;
+}
+.mr{
+	position: relative;
+}
+
+.mr-percent{
+	margin-top: 25px;
+}
+.mr .mr-percent .percent{
+	color: #cd4a48;
+	font-style: oblique;
+}
+.middle .marticle{
+	font-size: 12px;
+	color: #231815;
+	line-height: 16px;
+	zoom:1;
+	filter:alpha(opacity=70); 
+	-moz-opacity:0.7; 
+	opacity:0.7;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+/*中间的下面*/
+.bottom{
+	overflow: hidden;
+	margin-top: 30px;
+}
+.lb{
+	width: 415px;
+	height: 650px;
+	float: left;
+	position: relative;
+	/*background-color: grey;*/
+}
+
+.lb .lb-title{
+	border-bottom: 2px solid #11456b;
+}
+.lb .lb-title p{
+	color: #11456b;
+	font-family: "黑体";
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+	
+}
+.lb .lb-title p:nth-child(1){
+	font-variant: small-caps;
+	font-size: 72px;
+	line-height: 0.7;
+}
+.lb .lb-title p:nth-child(1) em:first-child{
+	color: #f5e327;
+	font-weight: bold;
+}
+.lb .lb-title p:nth-child(2){
+	margin-top: 20px;
+	margin-bottom: 15px;
+	font-size: 33px;
+}
+.lb .barticle{
+	font-size: 12px;
+	color: #767777;
+	font-family: "宋体";
+	line-height: 16px;
+	margin-top: 15px;
+}
+.lb .barticle p{
+	text-indent:2em;
+	margin: 0;
+}
+.lb .barticle div:first-child{
+	display: block;
+	font-family: "微软雅黑";
+	font-size: 70px;
+	color: #f5e327;
+	float: left;
+	margin: 30px 5px 30px 0;
+}
+.lb img{
+	float: right;
+	margin: 15px 0 15px 15px;
+}
+.rb{
+	width: 458px;
+	height: 650px;
+	float: right;
+}
+.brbr{
+	height: 310px;
+	background-color: rgb(238,238,214);
+	margin-top: 30px;
+	padding-top: 20px;
+}
+.rb .brbr .author{
+	text-align: right;
+	font-size: 16px;
+	font-family: "宋体";
+	color: #5a5b5b;
+	margin-right: 25px;
+	margin-bottom: 20px;
+}
+.rb .brbr .author em{
+	font-size: 12px;
+}
+.count{
+	width: 260px;
+	height: 160px;
+	background-color: rgb(213,93,92);
+	float: left;
+	padding-top: 35px;
+	margin-right: 20px;
+}
+.count div{
+	float: left;
+}
+.count p{
+	color: white;
+}
+.count div:nth-child(1){
+	width: 25%;
+}
+.count div:nth-child(1) p{
+	font-size: 65px;
+	margin-top: 0;
+	text-align: right;
+	margin-right: 10px;
+}
+.count div:nth-child(2){
+	height: 86px;
+	width: 70%;
+	border-left: 2px solid white;
+	padding-left: 10px;
+}
+.count div:nth-child(2) p:nth-child(1), .count div:nth-child(2) p:nth-child(2){
+	font-size: 20px;
+	margin-top: 0;
+	margin-bottom: 0;
+} 
+.count div:nth-child(2) p:nth-child(3){
+	font-size: 12px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.last-text{
+	font-size: 14px;
+	color: #5a5b5b;
+	font-style: italic;
+	line-height: 16px;
+	margin-right: 20px;
+	margin-top: 35px;
+}
+.last-text span{
+	width: 20px;
+	height: 20px;
+	font-size: 72px;
+	color: #d45d5c;
+	font-family: "黑体";
+	font-style: normal;
+	margin: 0;
+	position: relative;
+    top: 30px;
+}
+
+/*=======================底部============================*/
+footer{
+	position: relative;
+	height: 70px;
+	border-top: 1px solid #938e8c;
+	margin: 0 auto;
+}
+footer p{
+	position: absolute;
+	right: 0;
+	top: 5px;
+	margin: 0;
+	font-family: "黑体";
+	font-size: 12px;
+	color: #d45d5c;
+}
