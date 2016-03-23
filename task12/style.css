@@ -1,0 +1,110 @@
+table, input, .banner{
+	margin: 40px auto;
+}
+.banner{
+	width: 400px;
+	height: 300px;
+	/*background-color: grey;*/
+}
+
+/*以下为表格CSS*/
+thead{
+	color: white;
+	background-color: black;
+}
+/*
+	Odd表示第奇数个
+	even表示第偶数个
+	从1开始计数
+ */
+tbody tr:nth-of-type(1), tbody tr:nth-of-type(2), tbody tr:nth-of-type(3){
+	color: red;
+}
+tbody tr:nth-of-type(Odd){
+	background-color: white;
+}
+tbody tr:nth-of-type(even){
+	background-color: #ccc;
+}
+/*以下为输入框CSS*/
+input{
+	width: 100px;
+	display: block;
+	background-color: white;
+	transition-property:width,background-color;
+	-moz-transition-property:width,background-color; /* Firefox 4 */
+	-webkit-transition-property:width,background-color; /* Safari and Chrome */
+	-o-transition-property:width,background-color; /* Opera */
+	-webkit-transition-duration: 2s;
+	   -moz-transition-duration: 2s;
+	    -ms-transition-duration: 2s;
+	     -o-transition-duration: 2s;
+	        transition-duration: 2s;
+
+}
+input:focus{
+	width: 200px;
+	background-color: #ddd;
+}
+/*以下为banner的CSS*/
+.banner{
+	position: relative;
+	overflow: hidden;
+}
+.banner-part{
+	height: 100%;
+	position: relative;
+	width: 300%;
+	margin: 0;
+	padding: 0;
+	-webkit-transition: left .5s ease-in-out;
+	   -moz-transition: left .5s ease-in-out;
+	    -ms-transition: left .5s ease-in-out;
+	     -o-transition: left .5s ease-in-out;
+	        transition: left .5s ease-in-out;
+}
+.banner-part li{
+	display: block;
+	float: left;
+	margin: 0;
+	height: 100%;
+	width: 400px;
+}
+.banner-part li:nth-of-type(1){
+	background-color: #f00;
+}
+.banner-part li:nth-of-type(2){
+	background-color: #0f0;
+}
+.banner-part li:nth-of-type(3){
+	background-color: #00f;
+}
+.banner-selecter{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.banner-selecter li{
+	text-align: center;
+	display: inline-block;
+}
+
+.banner-selecter li a {
+	background-color: rgba(255,255,255,0.5);
+	display: inline-block;
+	width: 50px;
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	margin-top: 10px;
+
+}
+#mark1:target~.banner-part{
+	left: 0;
+}
+#mark2:target~.banner-part{
+	left: -100%;
+}
+#mark3:target~.banner-part{
+	left: -200%;
+}
