@@ -1,0 +1,386 @@
+/* line 5, ../../../../../programs/__Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../programs/__Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../programs/__Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../programs/__Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../programs/__Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../programs/__Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../programs/__Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../programs/__Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../programs/__Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/_header.scss */
+.logo {
+  float: left;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+/* line 6, ../sass/_header.scss */
+.logo ~ img, header a, .search {
+  float: right;
+}
+
+/* line 11, ../sass/_header.scss */
+.logo ~ img {
+  margin-top: 18px;
+  margin-right: 3px;
+}
+
+/* line 16, ../sass/_header.scss */
+.search {
+  margin-top: 12px;
+  margin-right: 20px;
+  background-color: white;
+  height: 32px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+/* line 22, ../sass/_header.scss */
+.search img {
+  margin-left: 15px;
+}
+
+/* line 28, ../sass/_header.scss */
+header input {
+  border: none;
+  margin-right: 20px;
+  height: 30px;
+  width: 200px;
+  -webkit-transition: width .5s ease;
+  -moz-transition: width .5s ease;
+  -ms-transition: width .5s ease;
+  -o-transition: width .5s ease;
+  transition: width .5s ease;
+}
+
+/* line 39, ../sass/_header.scss */
+header input:focus {
+  width: 300px;
+}
+
+/* line 42, ../sass/_header.scss */
+header a {
+  color: white;
+  margin-right: 55px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+/* line 1, ../sass/_nav.scss */
+.user {
+  height: 100px;
+  width: 230px;
+  margin: 15px auto;
+}
+/* line 5, ../sass/_nav.scss */
+.user img {
+  float: left;
+  margin-left: 20px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  border: 3px double white;
+}
+
+/* line 13, ../sass/_nav.scss */
+.username {
+  float: right;
+  font-weight: bolder;
+  font-variant: small-caps;
+  font-size: 30px;
+  margin: 35px 5px 0 0;
+  color: white;
+}
+
+/* line 22, ../sass/_nav.scss */
+.userinfo {
+  width: 230px;
+  margin: 15px auto 15px auto;
+}
+/* line 29, ../sass/_mixin.scss */
+.userinfo:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 28, ../sass/_nav.scss */
+.fans, .collect {
+  width: 49%;
+  float: left;
+  text-align: center;
+}
+/* line 32, ../sass/_nav.scss */
+.fans p, .collect p {
+  color: #b4b4b4;
+}
+
+/* line 37, ../sass/_nav.scss */
+.collect {
+  border-right: 2px solid #373737;
+}
+
+/* line 42, ../sass/_nav.scss */
+.selection li {
+  display: block;
+  margin-top: 15px;
+  line-height: 26px;
+  color: #506478;
+}
+/* line 48, ../sass/_nav.scss */
+.selection .level0 {
+  text-indent: 4em;
+}
+/* line 50, ../sass/_nav.scss */
+.selection .level0 li:before {
+  position: absolute;
+  left: -25px;
+}
+/* line 54, ../sass/_nav.scss */
+.selection .level0 > li:nth-of-type(1):before {
+  content: url(../icon/open-folder.png);
+}
+/* line 57, ../sass/_nav.scss */
+.selection .level0 > li:nth-of-type(2):before {
+  content: url(../icon/star.png);
+}
+/* line 60, ../sass/_nav.scss */
+.selection .level0 > li:nth-of-type(3):before {
+  content: url(../icon/share.png);
+}
+/* line 63, ../sass/_nav.scss */
+.selection .level0 > li:nth-of-type(4):before {
+  content: url(../icon/star.png);
+}
+/* line 66, ../sass/_nav.scss */
+.selection .level0 > li:nth-of-type(5):before {
+  content: url(../icon/star.png);
+}
+/* line 69, ../sass/_nav.scss */
+.selection .level0 > li:nth-of-type(6):before {
+  content: url(../icon/book.png);
+}
+/* line 73, ../sass/_nav.scss */
+.selection .level1 {
+  text-indent: 6em;
+  background-color: #323c46;
+}
+/* line 76, ../sass/_nav.scss */
+.selection .level1 > li:before {
+  content: url(../icon/add-folder.png);
+}
+/* line 80, ../sass/_nav.scss */
+.selection .level2 {
+  text-indent: 8em;
+}
+/* line 81, ../sass/_nav.scss */
+.selection .level2 > li:before {
+  content: url(../icon/document.png);
+}
+
+/* line 1, ../sass/_main.scss */
+.folder {
+  display: block;
+  background-color: white;
+  width: 100%;
+  height: 20px;
+  padding-top: 5px;
+  color: #bebebe;
+  text-indent: 2em;
+  font-size: 10px;
+}
+/* line 10, ../sass/_main.scss */
+.folder span {
+  color: gainsboro;
+}
+/* line 13, ../sass/_main.scss */
+.folder span:nth-of-type(3), .folder span:nth-of-type(4) {
+  color: #1e82be;
+}
+
+/* line 18, ../sass/_main.scss */
+.main-content {
+  width: 900px;
+  margin: 15px auto;
+  background-color: white;
+}
+/* line 29, ../sass/_mixin.scss */
+.main-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 25, ../sass/_main.scss */
+.advanced-search {
+  width: 100%;
+  height: 85px;
+  border: 1px solid gainsboro;
+  margin-bottom: 10px;
+}
+/* line 30, ../sass/_main.scss */
+.advanced-search > div {
+  float: left;
+  margin: 10px;
+}
+/* line 33, ../sass/_main.scss */
+.advanced-search > div:nth-of-type(1) {
+  width: 190px;
+}
+/* line 36, ../sass/_main.scss */
+.advanced-search > div:nth-of-type(2) {
+  width: 160px;
+}
+/* line 39, ../sass/_main.scss */
+.advanced-search > div:nth-of-type(3) {
+  width: 60px;
+}
+/* line 42, ../sass/_main.scss */
+.advanced-search > div:nth-of-type(4) {
+  width: 320px;
+}
+
+/* line 47, ../sass/_main.scss */
+.search-history {
+  width: 100%;
+  height: 65px;
+  border: 1px solid gainsboro;
+  margin-bottom: 10px;
+}
+
+/* line 53, ../sass/_main.scss */
+.statistics {
+  width: 100%;
+  height: 65px;
+  border: 1px solid gainsboro;
+  margin-bottom: 10px;
+}
+
+/* line 60, ../sass/_main.scss */
+.section {
+  height: 355px;
+  border: 1px solid gainsboro;
+  margin-bottom: 10px;
+}
+
+/* line 65, ../sass/_main.scss */
+.material {
+  float: left;
+  width: 58%;
+}
+
+/* line 69, ../sass/_main.scss */
+.report-forms {
+  float: right;
+  width: 38%;
+}
+
+/* line 73, ../sass/_main.scss */
+.calendar {
+  float: left;
+  width: 38%;
+}
+
+/* line 77, ../sass/_main.scss */
+.ranking {
+  float: right;
+  width: 58%;
+}
+
+/* line 9, ../sass/style.scss */
+body {
+  font-family: "MicrosoftJhengHei", "Microsoft YaHei";
+  min-width: 960px;
+}
+
+/* line 13, ../sass/style.scss */
+header {
+  width: 100%;
+  background-color: #2088c0;
+  height: 56px;
+}
+
+/* line 18, ../sass/style.scss */
+.content {
+  width: 100%;
+  position: relative;
+}
+/* line 29, ../sass/_mixin.scss */
+.content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 23, ../sass/style.scss */
+.nav {
+  width: 20%;
+  float: left;
+  background-color: #292f3d;
+  min-width: 220px;
+  height: 1100px;
+}
+
+/* line 30, ../sass/style.scss */
+.main {
+  width: 80%;
+  float: left;
+  background-color: #eeeeee;
+  height: 1100px;
+}
