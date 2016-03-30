@@ -1,0 +1,50 @@
+.aqi-chart-wrap{
+	height: 500px;
+	width: 600px;
+}
+
+.day,.week,.month{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+.day .gra,.week .gra,.month .gra{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+.day{
+	width: 6px;
+}
+
+.week{
+	width: 42px;
+}
+
+.month{
+	width: 180px;
+}
+
+.day:nth-of-type(7n+0) .gra,.week:nth-of-type(7n+0) .gra,.month:nth-of-type(7n+0) .gra{
+	background-color: #f00;
+}
+.day:nth-of-type(7n+1) .gra,.week:nth-of-type(7n+1) .gra,.month:nth-of-type(7n+1) .gra{
+	background-color: #ff0;
+}
+.day:nth-of-type(7n+2) .gra,.week:nth-of-type(7n+2) .gra,.month:nth-of-type(7n+2) .gra{
+	background-color: #00f;
+}
+.day:nth-of-type(7n+3) .gra,.week:nth-of-type(7n+3) .gra,.month:nth-of-type(7n+3) .gra{
+	background-color: #0ff;
+}
+.day:nth-of-type(7n+4) .gra,.week:nth-of-type(7n+4) .gra,.month:nth-of-type(7n+4) .gra{
+	background-color: #0f0;
+}
+.day:nth-of-type(7n+5) .gra,.week:nth-of-type(7n+5) .gra,.month:nth-of-type(7n+5) .gra{
+	background-color: #f0f;
+}
+.day:nth-of-type(7n+6) .gra,.week:nth-of-type(7n+6) .gra,.month:nth-of-type(7n+6) .gra{
+	background-color: #000;
+}
