@@ -1,0 +1,10 @@
+.result div{
+	margin: 20px;
+	padding-top: 20px;
+	background: tomato;
+	color: white;
+	height: 40px;
+	width: 60px;
+	text-align: center;
+	float: left;
+}
