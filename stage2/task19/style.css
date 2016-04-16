@@ -1,0 +1,17 @@
+.result div{
+	margin: 2px;
+	
+	color: white;
+	height: 100px;
+	width: 10px;
+	text-align: center;
+	float: left;
+	position: relative;
+}
+
+.result div div{
+	position: absolute;
+	background: tomato;
+	width: 100%;
+	bottom: 0;
+}

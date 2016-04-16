@@ -1,5 +1,4 @@
 var myarr=[];
-
 function sleep(numberMillis) {
 	var now = new Date();
 	var exitTime = now.getTime() + numberMillis;
@@ -14,7 +13,7 @@ function render(){
 	for (var i = 0; i < myarr.length; i++) {
 		$(".result").append("<div><div style ='height:"+myarr[i]+"px'></div>");
 	}
-	//sleep(600);//这个不知道怎么实现啊
+	// sleep(100);这个不知道怎么实现啊
 }
 function getNum(){
 	var num=$(".num").val();
