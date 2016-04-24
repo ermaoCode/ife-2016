@@ -20,6 +20,7 @@ body {
 .flex-item {
 	display: flex;
 	flex-flow: row wrap;
+	background: white;
 	margin: 20px;
 	background-color: white;
 	border: 2px solid black;
